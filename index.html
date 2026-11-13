@@ -7,8 +7,39 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main></main>
+    <main>
+      <article class="article-card">
+        <img src="./images/drawers.jpg" alt="" class="article-card__image" />
+
+        <div class="article-card__content">
+          <h2 class="article-card__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+
+          <p class="article-card__description">
+            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I've got some simple tips to help
+            you make any room feel complete.
+          </p>
+
+          <div class="article-card__footer">
+            <div class="article-card__author">
+              <img src="./images/avatar-michelle.jpg" alt="" class="article-card__avatar" />
+
+              <div>
+                <span class="article-card__author-name">Michelle Appleton</span>
+                <span class="article-card__date">28 Jun 2020</span>
+              </div>
+            </div>
+
+            <button type="button" class="article-card__share-btn" aria-label="Share article" aria-expanded="false">
+              <svg src="./images/icon-share.svg" class="article-card__share-icon" aria-hidden="true"></svg>
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
 
     <script src="./script.js"></script>
   </body>
 </html>
+
+<!-- • article-card__share-btn--active Es el modificador para cambiar el fondo del botón a oscuro cuando el menú está abierto.
+• article-card__share-menu Es la barra emergente con los iconos de redes sociales. -->
