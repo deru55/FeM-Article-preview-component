@@ -27,3 +27,13 @@ shareBtn.addEventListener("click", () => {
 
   shareBtn.setAttribute("aria-expanded", !isShareMenuExpanded);
 });
+
+// Cerrar si se hace clic fuera del bocadillo y del botón
+document.addEventListener("click", (e) => {
+  const clickedInsideMenu = shareMenu.contains(e.target);
+  const clickedOnButton = shareBtn.contains(e.target);
+
+  if (!clickedInsideMenu && !clickedOnButton) {
+    shareBtn.setAttribute("aria-expanded", "false");
+  }
+});
