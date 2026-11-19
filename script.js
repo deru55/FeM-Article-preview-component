@@ -2,7 +2,7 @@ const html = document.documentElement;
 const shareBtn = document.querySelector("[data-share-btn]");
 const authorInfo = document.querySelector("[data-author]");
 const shareMenu = document.querySelector("[data-share-menu]");
-const toggleBtn = document.getElementById("theme-toggle");
+const toggleBtn = document.querySelector("[data-theme-toggle]");
 const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 // 1. Cargar preferencia guardada si existe
